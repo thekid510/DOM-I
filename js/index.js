@@ -43,23 +43,29 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 const header = document.querySelector('header');
 
-let links = document.querySelectorAll("nav a");
-links[0].textContent = "Services"
-links[0].href = '#'
-links[1].textContent = "Product"
-links[1].href = '#'
-links[2].textContent = "Vision"
-links[2].href = '#'
-links[3].textContent = "Features"
-links[3].href = '#'
-links[4].textContent = "About"
-links[4].href = '#'
-links[5].textContent = "Contact"
-links[5].href = '#'
+let nav = document.querySelectorAll("nav a");
+for(i =1; i<6; i++) {
+  let navItem = "nav-item-" +(i+1);
+  nav[i].textContent = siteContent["nav"]
+    [navItem];
+}
+
+// links[0].textContent = "Services"
+// links[0].href = '#'
+// links[1].textContent = "Product"
+// links[1].href = '#'
+// links[2].textContent = "Vision"
+// links[2].href = '#'
+// links[3].textContent = "Features"
+// links[3].href = '#'
+// links[4].textContent = "About"
+// links[4].href = '#'
+// links[5].textContent = "Contact"
+// links[5].href = '#'
 
 const cta = document.querySelector('h1');
 
-cta.textContent = 'DOM IS AWESOME'
+cta.innerHTML = 'DOM <br> IS <br> AWESOME'
 
 const btn = document.querySelector('button');
 btn.textContent = 'Get Started'
@@ -81,10 +87,12 @@ h4[1].nextElementSibling.textContent = "About content elementum magna eros, ac p
 h4[2].nextElementSibling.textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
 h4[3].nextElementSibling.textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
 h4[4].nextElementSibling.textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
-h4[5].nextElementSibling.textContent = "123 Way 456 Street Somewhere, USA"
-h4[5].nextElementSibling.textContent = "1 (888) 888-8888"
-h4[5].nextElementSibling.textContent = "sales@greatidea.io"
-
 
 const midimage = document.getElementById('middle-img')
 midimage.setAttribute('src','img/mid-page-accent.jpg')
+
+let footerContent = document.querySelectorAll(".contact p")
+
+footerContent[0].textContent = "123 Way 456 Street Somewhere, USA"
+footerContent[1].textContent = "1 (888) 888-8888"
+footerContent[2].textContent = "sales@greatidea.io"
