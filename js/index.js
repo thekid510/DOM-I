@@ -43,25 +43,32 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 const header = document.querySelector('header');
 
-let nav = document.querySelectorAll("nav a");
-for(i =1; i<6; i++) {
-  let navItem = "nav-item-" +(i+1);
-  nav[i].textContent = siteContent["nav"]
-    [navItem];
-}
+let links = document.querySelectorAll("nav a");
+// for(i =1; i<6; i++) {
+//   let linksItem = "nav-item-" +(i+1);
+//   links[i].textContent = siteContent["nav"]
+//     [linksItem];
+// }
 
-// links[0].textContent = "Services"
-// links[0].href = '#'
-// links[1].textContent = "Product"
-// links[1].href = '#'
-// links[2].textContent = "Vision"
-// links[2].href = '#'
-// links[3].textContent = "Features"
-// links[3].href = '#'
-// links[4].textContent = "About"
-// links[4].href = '#'
-// links[5].textContent = "Contact"
-// links[5].href = '#'
+links[0].textContent = "Services"
+links[0].href = '#'
+links[0].style.color = 'green'
+links[1].textContent = "Product"
+links[1].href = '#'
+links[1].style.color = 'green'
+links[2].textContent = "Vision"
+links[2].href = '#'
+links[2].style.color = 'green'
+links[3].textContent = "Features"
+links[3].href = '#'
+links[3].style.color = 'green'
+links[4].textContent = "About"
+links[4].href = '#'
+links[4].style.color = 'green'
+links[5].textContent = "Contact"
+links[5].href = '#'
+links[5].style.color = 'green'
+
 
 const cta = document.querySelector('h1');
 
@@ -96,3 +103,6 @@ let footerContent = document.querySelectorAll(".contact p")
 footerContent[0].textContent = "123 Way 456 Street Somewhere, USA"
 footerContent[1].textContent = "1 (888) 888-8888"
 footerContent[2].textContent = "sales@greatidea.io"
+
+let copyr = document.querySelector('footer p')
+copyr.textContent = 'Copyright Great Idea! 2018'
