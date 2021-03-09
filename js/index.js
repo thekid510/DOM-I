@@ -71,17 +71,18 @@ links[5].style.color = 'green'
 
 
 
-// const extra = document.createElement('a')
-// extra.textContent = "J"
-// extra.href = "#"
-// extra.style.color = 'green'
-// document.querySelector('nav').prependChild(extra)
+const extra = document.createElement('a')
+extra.textContent = "Last is First"
+extra.href = "#"
+extra.style.color = 'green'
+document.querySelector('nav').prepend(extra)
 
 const extra2 = document.createElement('a')
 extra2.textContent = "James"
 extra2.href = "#"
 extra2.style.color = 'green'
 document.querySelector('nav').appendChild(extra2)
+
 
 
 const cta = document.querySelector('h1');
