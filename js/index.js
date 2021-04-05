@@ -72,7 +72,7 @@ links[5].style.color = 'green'
 
 
 const extra = document.createElement('a')
-extra.textContent = "Last is First"
+extra.textContent = "Last is"
 extra.href = "#"
 extra.style.color = 'green'
 document.querySelector('nav').prepend(extra)
